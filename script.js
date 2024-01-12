@@ -6,10 +6,10 @@ $(document).ready(function () {
     $("#btn1").removeClass("d-none");
     $("#simpleColor").addClass("text-primary");
     $("#hexColor").removeClass("text-primary");
-    if ($("#btn2").hasClass("d-none")) {
-      return;
-    } else {
+    if (!$("#btn2").hasClass("d-none")) {
       $("#btn2").addClass("d-none");
+    } else {
+      return;
     }
   });
 
@@ -17,10 +17,10 @@ $(document).ready(function () {
     $("#btn2").removeClass("d-none");
     $("#hexColor").addClass("text-primary");
     $("#simpleColor").removeClass("text-primary");
-    if ($("#btn1").hasClass("d-none")) {
-      return;
-    } else {
+    if (!$("#btn1").hasClass("d-none")) {
       $("#btn1").addClass("d-none");
+    } else {
+      return;
     }
   });
 
